@@ -1,5 +1,4 @@
 import { Hono } from "hono";
-import { auth } from "./lib/auth.js";
 import { serve } from "@hono/node-server";
 import { cors } from "hono/cors";
 import { PrismaClient } from "@prisma/client";
