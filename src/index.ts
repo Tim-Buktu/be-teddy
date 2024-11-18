@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { serve } from "@hono/node-server";
+// import { serve } from "@hono/node-server";
 // import { handle } from 'hono/vercel'
 import { cors } from "hono/cors";
 import { PrismaClient } from "@prisma/client";
@@ -132,4 +132,4 @@ app.post("/api/state", async (c) => {
 	});
 });
 
-serve(app)
+export default app;
