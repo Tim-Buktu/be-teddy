@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-// import { serve } from "@hono/node-server";
-import { handle } from 'hono/vercel'
+import { serve } from "@hono/node-server";
+// import { handle } from 'hono/vercel'
 import { cors } from "hono/cors";
 import { PrismaClient } from "@prisma/client";
 import { logger } from "hono/logger";
@@ -132,7 +132,4 @@ app.post("/api/state", async (c) => {
 	});
 });
 
-const handler = handle(app);
-
-export const GET = handler;
-export const POST = handler;
+serve(app)

@@ -3,8 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "start": "vercel dev",
-    "deploy": "vercel"
+    "start": "tsx src/index.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
