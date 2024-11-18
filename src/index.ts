@@ -17,6 +17,9 @@ app.use(
 		origin: "*",
 	}),
 );
+app.get("/", (c) => {
+	return c.json({ message: "Backend connected successfully" });
+})
 app.post("/api/register", async (c) => {
 	const { email, password } = await c.req.json();
 
