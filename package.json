@@ -2,7 +2,9 @@
   "name": "be-timmy",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "build": "vercel dev",
+    "start": "vercel"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
